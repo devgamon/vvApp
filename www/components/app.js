@@ -11,8 +11,15 @@ window.onload = ()=>{
             for(i = 0; i < json.length; i++){
             		insert.innerHTML+= `
                         <div class="productBox">
-                            <img src="${json[i].capa}">
-                            <h2>${json[i].titulo}</h2>
+                            <div class="bookBox">
+                                <img src="${json[i].capa}">
+                                <h2>${json[i].titulo}</h2>
+                            </div>
+                            <div class="down">
+                                <div class="btnBox">
+                                    <button>Ver Mais</button>
+                                </div> 
+                            </div>
                         </div>
                 	`;
             }
